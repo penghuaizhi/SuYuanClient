@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jnluke.sourcetrace.ui.activity.GoodInfoActivity">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+        <include android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/head"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/layout_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_goodinfo" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/good_info_main_background"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="20dp"
+                        android:background="@drawable/good_info_tab_background">
+                        <RadioGroup
+                            android:id="@+id/segment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/layout_banner"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radio_pick"
+                                style="@style/style_good_info"
+                                android:drawableTop="@drawable/good_info_nav_background_pick"
+                                android:checked="true"
+                                android:text="生产环节"/>
+                            <RadioButton
+                                android:id="@+id/radio_transport"
+                                style="@style/style_good_info"
+                                android:drawableTop="@drawable/good_info_nav_background_transport"
+                                android:text="物流环节"/>
+                            <RadioButton
+                                android:id="@+id/radio_list"
+                                style="@style/style_good_info"
+                                android:drawableTop="@drawable/good_info_nav_background_list"
+                                android:text="上市环节"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/framelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

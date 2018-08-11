@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/framelayout_cotain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_bottom_background"
+        android:orientation="horizontal">
+
+        <com.jnluke.sourcetrace.pager.view.HomeBottomTabView
+            android:id="@+id/suyuan_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jnluke.sourcetrace.pager.view.HomeBottomTabView
+            android:id="@+id/jinrong_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jnluke.sourcetrace.pager.view.HomeBottomTabView
+            android:id="@+id/shangcheng_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jnluke.sourcetrace.pager.view.HomeBottomTabView
+            android:id="@+id/shenghuo_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/main_bottom_arch_background"
+        android:gravity="center"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/scan" />
+    </RelativeLayout>
+</RelativeLayout>

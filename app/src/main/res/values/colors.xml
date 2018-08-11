@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全局红色 -->
+    <color name="red">#E13F3F</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 白色 -->
+    <color name="white_harf">#80FFFFFF</color>
+    <!-- 黑 -->
+    <color name="black">#000000</color>
+    <!-- Hint字体灰 -->
+    <color name="gray_text_hint">#999999</color>
+    <!-- Hint字体灰 -->
+    <color name="gray_line">#CCCCCC</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 黄色 -->
+    <color name="yellow">#F7BB05</color>
+    <!-- 黄色 -->
+    <color name="blue">#1874CD</color>
+    <!-- 透明点击背景颜色 -->
+    <color name="press_color">#21000000</color>
+
+    <!-- 红色点击背景颜色 -->
+    <color name="red_press_color">#55E13F3F</color>
+    <!-- 全局页面背景 -->
+    <color name="view_bg">#f0f0f0</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_background">#fccc</color>
+    <color name="gray">#f999</color>
+    <color name="gray_text">#f666</color>
+
+    <color name="start_index_back_border">#feee</color>
+    <color name="start_back">#efeee7</color>
+    <color name="login_regist_form_back">#11afb9ce</color>
+    <color name="start_skip_back">#fff</color>
+    <color name="login_form_border">#faaa</color>
+    <color name="login_login_back">#43ab32</color>
+    <!--<color name="head_back">#f2628d</color>-->
+    <color name="head_back">#bc8438</color>
+    <color name="login_regist_back">#1f4762</color>
+    <color name="person_center_top_back">#c99d60</color>
+    <color name="good_award_button_bg">#ffb910</color>
+    <color name="start_submit_back">#26d755</color>
+    <color name="title_color">#ffd94444</color>
+    <color name="main_bottom_background">#130e14</color>
+    <color name="main_bottom_text_color_select">#564ebc</color>
+    <color name="main_top_item_background">#2e234d</color>
+    <color name="main_gallery_item_background">#282143</color>
+    <color name="regist_background">#211924</color>
+    <color name="info_search_background">#2c2048</color>
+    <color name="good_info_main_background">#f0f0f5</color>
+    <color name="head_back_good_oribin_list">#2c2048</color>
+    <color name="main_fragment_gallery_textcolor">#7d759c</color>
+
+    <color name="half_color">#30000000</color>
+</resources>

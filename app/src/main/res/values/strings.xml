@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">溯源系统</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_home">个人主页</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="update_prompt">更新提示</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+    <string name="install_loaded_apk">最新的安装文件已经下载完毕，是否安装？</string>
+    <string name="update_title">正在下载</string>
+    <string name="update_content">正在下载最新版本</string>
+
+
+    <string name="action_restart">重启</string>
+    <string name="error_title">程序错误</string>
+    <string name="error_message">对不起！应用程序出现异常退出了。\n\n请点击 重启 按钮重启当前应用进行重试。</string>
+    <string name="tip_double_click_exit">再次点击退出</string>
+    <string name="net_work_error">网络连接失败...</string>
+    <string name="net_work_connect_timeout">网络连接超时...</string>
+    <string name="already_best_new_version">已是最新版本</string>
+</resources>

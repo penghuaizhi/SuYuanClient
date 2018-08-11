@@ -1,0 +1,81 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="SplashTheme" parent="AppTheme2">
+        <item name="android:windowBackground">@drawable/start_logo</item>
+    </style>
+
+    <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/view_bg</item>
+    </style>
+
+    <!--全屏加透明-->
+    <style name="TranslucentFullScreenTheme" parent="ActivityTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="ClubDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="style_edittext">
+        <item name="android:layout_marginStart">@dimen/password_edittext_margin</item>
+        <item name="android:layout_marginEnd">@dimen/password_edittext_margin</item>
+        <item name="android:layout_marginLeft">@dimen/password_edittext_margin</item>
+        <item name="android:layout_marginRight">@dimen/password_edittext_margin</item>
+        <item name="android:paddingTop">@dimen/form_edittext_padding_TB</item>
+        <item name="android:paddingBottom">@dimen/form_edittext_padding_TB</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="style_good_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/good_info_nav_textcolor</item>
+    </style>
+    <declare-styleable name="myFloatView">
+        <attr name="parentViewBackground" format="reference"/>
+        <attr name="childViewBackground" format="reference"/>
+        <attr name="childTextColor" format="color"/>
+        <attr name="defaultViewText" format="string"/>
+        <attr name="chidTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

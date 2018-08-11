@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jnluke.sourcetrace.ui.activity.GoodRewardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/head"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/good_award_banner"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:drawableLeft="@drawable/search"
+                    android:hint="请输入溯源码"/>
+                <ImageView
+                    android:id="@+id/scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/scan_gray"/>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0.1dp">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
